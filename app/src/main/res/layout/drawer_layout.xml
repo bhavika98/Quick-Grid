@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Main_Page_Drawer"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        style="@style/drawer_layout"
+        android:onClick="menuRate">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMore"
+            style="@style/drawer_img"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_rate" />
+
+        <com.app.mylib.util.DrawerText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Rate Us"
+            android:textColor="@color/drawer_text_color"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/drawer_layout"
+        android:layout_marginTop="20dp"
+        android:onClick="menuMore">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/drawer_img"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_more" />
+
+        <com.app.mylib.util.DrawerText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="More Apps"
+            android:textColor="@color/drawer_text_color"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/drawer_layout"
+        android:layout_marginTop="20dp"
+        android:onClick="menuPolicy">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/drawer_img"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_policy" />
+
+        <com.app.mylib.util.DrawerText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Privacy Policy"
+            android:textColor="@color/drawer_text_color"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/drawer_layout"
+        android:layout_marginTop="20dp"
+        android:onClick="menuUpdate">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/drawer_img"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_update" />
+
+        <com.app.mylib.util.DrawerText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Update"
+            android:textColor="@color/drawer_text_color"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/drawer_layout"
+        android:layout_marginTop="20dp"
+        android:onClick="menuShare">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            style="@style/drawer_img"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_share" />
+
+        <com.app.mylib.util.DrawerText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="Share"
+            android:textColor="@color/drawer_text_color"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

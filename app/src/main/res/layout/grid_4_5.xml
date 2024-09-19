@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:papp="http://schemas.android.com/apk/res-auto"
+    style="@style/gridLayout"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <carbon.widget.FrameLayout
+            android:id="@+id/frame1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.app.mylib.grid3d.PorterShapeImageView
+                android:id="@+id/image_add1"
+                style="@style/gridImage"
+                papp:siShape="@drawable/square_mask" />
+
+        </carbon.widget.FrameLayout>
+
+        <carbon.widget.FrameLayout
+            android:id="@+id/frame2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.app.mylib.grid3d.PorterShapeImageView
+                android:id="@+id/image_add2"
+                style="@style/gridImage"
+                papp:siShape="@drawable/square_mask" />
+
+        </carbon.widget.FrameLayout>
+
+    </LinearLayout>
+
+    <carbon.widget.FrameLayout
+        android:id="@+id/frame3"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/image_add3"
+            style="@style/gridImage"
+            papp:siShape="@drawable/square_mask" />
+
+    </carbon.widget.FrameLayout>
+
+    <carbon.widget.FrameLayout
+        android:id="@+id/frame4"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/image_add4"
+            style="@style/gridImage"
+            papp:siShape="@drawable/square_mask" />
+
+    </carbon.widget.FrameLayout>
+
+</LinearLayout>

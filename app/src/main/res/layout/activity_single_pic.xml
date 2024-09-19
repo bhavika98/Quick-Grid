@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_Color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_above="@+id/navigationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:id="@+id/captureLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.app.mylib.stickerview.StickerView
+                                android:id="@+id/sticker_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <com.app.mylib.singlepic.TouchImageView
+                                    android:id="@+id/imageView"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="center"
+                                    android:adjustViewBounds="true"
+                                    android:background="@color/BG_Color"
+                                    android:scaleType="fitCenter" />
+
+                            </com.app.mylib.stickerview.StickerView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.app.mylib.navigation.SpaceNavigationView
+                        android:id="@+id/navigationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        app:active_item_color="#4285f4"
+                        app:centre_button_color="#ffffff"
+                        app:centre_button_icon="@drawable/sticker_blue_icon"
+                        app:centre_part_linear="false"
+                        app:inactive_item_color="#ffffff"
+                        app:space_background_color="#252525"
+                        app:space_item_icon_size="22dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/sticker_view"/>
+
+        <include layout="@layout/single_crop"/>
+
+        <include layout="@layout/single_filter"/>
+
+        <include layout="@layout/single_adjust"/>
+
+        <include layout="@layout/text_sticker_view"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

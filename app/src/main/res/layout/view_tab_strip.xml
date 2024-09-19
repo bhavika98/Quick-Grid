@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="25.0dip"
+    android:layout_height="195.0dip"
+    android:background="@drawable/tab_strip_shape"
+    android:orientation="vertical"
+    android:paddingBottom="12.0dip"
+    android:paddingTop="12.0dip">
+
+    <TextView
+        android:id="@+id/tab_text_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/tab_text_2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/tab_text_3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/tab_text_4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/tab_text_5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="18.0sp" />
+</LinearLayout>

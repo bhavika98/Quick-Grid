@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:papp="http://schemas.android.com/apk/res-auto"
+    style="@style/gridLayout"
+    android:orientation="vertical">
+
+    <carbon.widget.FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/image_add1"
+            style="@style/gridImage"
+            papp:siShape="@drawable/grid_f_2" />
+
+    </carbon.widget.FrameLayout>
+
+</LinearLayout>

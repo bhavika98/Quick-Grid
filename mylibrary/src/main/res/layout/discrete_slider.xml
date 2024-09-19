@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.app.mylib.discreteslider.DiscreteSliderBackdrop
+        android:id="@+id/discrete_slider_backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"/>
+
+    <com.app.mylib.discreteslider.DiscreteSeekBar
+        android:id="@+id/discrete_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:layout_gravity="center_vertical"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Quick Grid</string>
+
+    <string name="save_image_name_1">Template_1</string>
+    <string name="save_image_name_2">Collage_2</string>
+    <string name="save_image_name_3">Camera_3</string>
+    <string name="save_image_name_4">Sticker_4</string>
+    <string name="total_folder">4</string>
+
+    <string name="alert_save_image">You have unsaved changes, do you want to exit and return to the previous screen?</string>
+
+    <!--GridSelectionActivity-->
+    <string name="GridSelectionActivity_Title">Select Grid</string>
+
+    <!--GridEditActivity-->
+    <string name="GridEditActivity_Title">Template</string>
+    <string name="alert">Please enter text first</string>
+
+    <!--GridActivity-->
+    <string name="GridActivity_Title">Grid</string>
+
+    <!--SinglePicActivity-->
+    <string name="SinglePicActivity_Title">Sticker</string>
+
+    <!--ImageSelectionActivity-->
+    <string name="ImageSelectionActivity_Title">Album</string>
+    <string name="sdcard_error">SD card can\'t be detected or read by the device.</string>
+    <string name="done">Done</string>
+
+    <!--ShareActivity-->
+    <string name="ShareActivity_Title">Image</string>
+    <string name="share_msg">Download this amazing app.</string>
+
+    <!--PhotoEditingActivity-->
+    <string name="PhotoEditingActivity_Title">Edit Image</string>
+
+    <!--SaveImage-->
+    <string name="img_save">Image saved successfully</string>
+
+    <!--MyAlbumActivity-->
+    <string name="MyAlbumActivity_Title">My Album</string>
+    <string name="album_delete">Album deleted successfully</string>
+    <string name="no_album">No album available</string>
+
+    <!--MyPhotoActivity-->
+    <string name="MyPhotoActivity_Title">My Photos</string>
+    <string name="no_photos">No photos available</string>
+
+    <!--MyPhotoGalleryActivity-->
+    <string name="MyPhotoGalleryActivity_Title">My Photo Gallery</string>
+    <string name="photo_delete">Photo deleted successfully</string>
+
+</resources>

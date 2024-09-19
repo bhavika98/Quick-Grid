@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/colorLayout"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/border"
+        android:background="@drawable/stroke_font_selection"
+        android:layout_width="30dp"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_centerInParent="true"
+            android:tint="@color/white"
+            android:src="@drawable/done_btn_selector"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

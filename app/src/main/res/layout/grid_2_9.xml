@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:papp="http://schemas.android.com/apk/res-auto"
+    style="@style/gridLayout">
+
+    <androidx.percentlayout.widget.PercentFrameLayout style="@style/perccentLayout">
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            style="@style/gridNew"
+            papp:layout_heightPercent="100%"
+            papp:layout_marginLeftPercent="0.0%"
+            papp:layout_marginTopPercent="0.0%"
+            papp:layout_widthPercent="100%">
+
+            <carbon.widget.FrameLayout
+                android:id="@+id/frame1"
+                style="@style/gridNew">
+
+                <com.app.mylib.grid3d.PorterShapeImageView
+                    android:id="@+id/image_add1"
+                    style="@style/gridImage"
+                    papp:siShape="@drawable/grid_f_5" />
+
+            </carbon.widget.FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            style="@style/gridNew"
+            papp:layout_heightPercent="60%"
+            papp:layout_marginLeftPercent="40%"
+            papp:layout_marginTopPercent="40%"
+            papp:layout_widthPercent="60%">
+
+            <carbon.widget.FrameLayout
+                android:id="@+id/frame2"
+                style="@style/gridNew">
+
+                <com.app.mylib.grid3d.PorterShapeImageView
+                    android:id="@+id/image_add2"
+                    style="@style/gridImage"
+                    papp:siShape="@drawable/grid_f_5" />
+
+            </carbon.widget.FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.percentlayout.widget.PercentFrameLayout>
+
+</LinearLayout>

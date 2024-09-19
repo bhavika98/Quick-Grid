@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/Status_Bar</color>
+    <color name="colorPrimaryDark">@color/Status_Bar</color>
+    <color name="colorAccent">#4285f4</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="disableColor">#ffd1d1d1</color>
+
+    <color name="Cam_Header">#333333</color>
+    <color name="Cam_Footer">#333333</color>
+    <color name="Cam_Focus">#4285f4</color>
+    <color name="Loading_Color">#4285f4</color>
+    <color name="Count_Down_Timer">#ffffff</color>
+
+    <color name="BG_Color">#1c1c1c</color>
+    <color name="Header_Color">#252525</color>
+    <color name="Footer_Color">#252525</color>
+    <color name="Header_Font_Color">#ffffff</color>
+    <color name="Done_Button_Color">#4285f4</color>
+    <color name="Done_Button_Font_Color">#ffffff</color>
+
+    <color name="Selected_Text_Color">#4285f4</color>
+    <color name="Normal_Text_Color">#ffffff</color>
+
+    <color name="Button_Normal_Color">#ffffff</color>
+    <color name="Button_Selected_Color">#4285f4</color>
+
+    <color name="Grid">#ffffff</color>
+
+    <color name="Status_Bar">#1d1d1d</color>
+    <color name="Status_Home">#bcbcbc</color>
+    <color name="Grid_Normal_Color">#7d7d7d</color>
+
+    <color name="Main_Page_Drawer">#9c000000</color>
+    <color name="Font_Sticker_Transparent_Stroke">#60000000</color>
+    <color name="SeekBar_Inside_Thumb">#4285f4</color>
+    <color name="SeekBar_Outside_Thumb">#ffffff</color>
+    <color name="Crop_Corner_Color">#4285f4</color>
+    <color name="Sticker_Font_Text_Color">#4285f4</color>
+    <color name="Font_Sticker_Back_To_Main_Color">#4285f4</color>
+    <color name="Popup_Color">#4285f4</color>
+    <color name="Stroke_Scroll">#80000000</color>
+    <color name="Font_Color">#ffffff</color>
+    <color name="Stroke">#4285f4</color>
+    <color name="Stroke_Transparent">#30000000</color>
+    <color name="Sticker_Bottom_Indicator">#4285f4</color>
+    <color name="Rotate_Selection">#30000000</color>
+    <color name="No_Data_Found_Color">#ffffff</color>
+    <color name="Save_Picture_Font_Color">#ffffff</color>
+
+    <color name="Sticker_Border_Color">#ffffff</color>
+    <color name="Sticker_BG_Color">#1c1c1c</color>
+    <color name="Sticker_Selected_Color">#333333</color>
+</resources>

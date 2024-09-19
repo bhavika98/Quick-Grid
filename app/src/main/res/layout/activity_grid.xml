@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_Color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/captureLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.app.mylib.stickerview.StickerView
+                            android:id="@+id/sticker_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:id="@+id/mainFrameLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:orientation="vertical" />
+
+                                <RelativeLayout
+                                    android:id="@+id/borderRelative"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true" />
+
+                            </RelativeLayout>
+
+                        </com.app.mylib.stickerview.StickerView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+
+                        <com.app.incroyable.quickgrid.util.CustomViewPager
+                            android:id="@+id/viewPagerBottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_color_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top"
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:weightSum="2">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/grid_color"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_weight="1" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/grid_color1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_grid_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewGrid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_border_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="6dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="12dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <androidx.appcompat.widget.AppCompatImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/spacing_icon"
+                                            android:tint="@color/Button_Normal_Color" />
+
+                                        <com.app.mylib.util.CustomTextView
+                                            android:layout_width="48dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="Spacing"
+                                            android:textColor="@color/white"
+                                            android:textSize="13dp" />
+
+                                        <SeekBar
+                                            android:id="@+id/mSpaceSeekbar"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:max="100"
+                                            android:maxHeight="2.0dip"
+                                            android:paddingLeft="20.0dip"
+                                            android:paddingRight="20.0dip"
+                                            android:progress="6"
+                                            android:progressDrawable="@drawable/seekbar_progress"
+                                            android:thumb="@drawable/seekbar_thumb" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="12dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <androidx.appcompat.widget.AppCompatImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/padding_icon"
+                                            android:tint="@color/Button_Normal_Color" />
+
+                                        <com.app.mylib.util.CustomTextView
+                                            android:layout_width="48dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="Margin"
+                                            android:textColor="@color/white"
+                                            android:textSize="13dp" />
+
+                                        <SeekBar
+                                            android:id="@+id/mBorderSeekBar"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:max="50"
+                                            android:maxHeight="2.0dip"
+                                            android:paddingLeft="20.0dip"
+                                            android:paddingRight="20.0dip"
+                                            android:progress="6"
+                                            android:progressDrawable="@drawable/seekbar_progress"
+                                            android:thumb="@drawable/seekbar_thumb" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="12dp"
+                                        android:layout_marginTop="12dp"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <androidx.appcompat.widget.AppCompatImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/border_radius_icon"
+                                            android:tint="@color/Button_Normal_Color" />
+
+                                        <com.app.mylib.util.CustomTextView
+                                            android:layout_width="48dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="Corner"
+                                            android:textColor="@color/white"
+                                            android:textSize="13dp" />
+
+                                        <SeekBar
+                                            android:id="@+id/mCornerSeekbar"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:max="150"
+                                            android:maxHeight="2.0dip"
+                                            android:paddingLeft="20.0dip"
+                                            android:paddingRight="20.0dip"
+                                            android:progress="10"
+                                            android:progressDrawable="@drawable/seekbar_progress"
+                                            android:thumb="@drawable/seekbar_thumb" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </ScrollView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_pattern_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="top"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewPattern"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:id="@+id/subPattern"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:visibility="gone"
+                                android:weightSum="2">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerViewPatternSub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.3" />
+
+                                <LinearLayout
+                                    android:id="@+id/goBackFromPattern"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:layout_weight="1.7"
+                                    android:background="@color/Font_Sticker_Back_To_Main_Color"
+                                    android:gravity="center">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@mipmap/done_btn"
+                                        android:tint="#ffffff" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_ratio_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewRatio"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_frameborder_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewFrame"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:background="@color/Footer_Color"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/tabBottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/sticker_view" />
+
+        <include layout="@layout/text_sticker_view"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

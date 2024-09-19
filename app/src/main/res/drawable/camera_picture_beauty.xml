@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_06" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_07" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_08" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_09" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_10" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_12" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_13" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_14" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_15" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_16" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_17" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_18" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_19" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_20" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_21" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_22" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_23" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_24" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_25" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_26" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_27" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_28" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_29" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_30" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_31" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_32" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_33" />
+    <item android:duration="35" android:drawable="@drawable/camera_picture_beauty_34" />
+</animation-list>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:papp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <androidx.percentlayout.widget.PercentFrameLayout style="@style/perccentLayout">
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/touchImageView1"
+            style="@style/touchImage"
+            papp:layout_heightPercent="56.0%"
+            papp:layout_marginLeftPercent="0.0%"
+            papp:layout_marginTopPercent="26.6%"
+            papp:layout_widthPercent="48.0%"
+            papp:siShape="@drawable/frame3_8_1" />
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/touchImageView2"
+            style="@style/touchImage"
+            papp:layout_heightPercent="45.9%"
+            papp:layout_marginLeftPercent="19.3%"
+            papp:layout_marginTopPercent="54.4%"
+            papp:layout_widthPercent="59.5%"
+            papp:siShape="@drawable/frame3_8_2" />
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/touchImageView3"
+            style="@style/touchImage"
+            papp:layout_heightPercent="56.4%"
+            papp:layout_marginLeftPercent="49.5%"
+            papp:layout_marginTopPercent="26.6%"
+            papp:layout_widthPercent="50.8%"
+            papp:siShape="@drawable/frame3_8_3" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mainImage"
+            style="@style/mainImage"
+            android:src="@drawable/frame3_8" />
+
+    </androidx.percentlayout.widget.PercentFrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:papp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <androidx.percentlayout.widget.PercentFrameLayout style="@style/perccentLayout">
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/touchImageView1"
+            style="@style/touchImage"
+            papp:layout_heightPercent="30.2%"
+            papp:layout_marginLeftPercent="7.5%"
+            papp:layout_marginTopPercent="12.4%"
+            papp:layout_widthPercent="82.0%"
+            papp:siShape="@drawable/frame1_2_1" />
+
+        <com.app.mylib.grid3d.PorterShapeImageView
+            android:id="@+id/touchImageView2"
+            style="@style/touchImage"
+            papp:layout_heightPercent="30.4%"
+            papp:layout_marginLeftPercent="12.7%"
+            papp:layout_marginTopPercent="48.9%"
+            papp:layout_widthPercent="79.6%"
+            papp:siShape="@drawable/frame1_2_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mainImage"
+            style="@style/mainImage"
+            android:src="@drawable/frame2_7" />
+
+    </androidx.percentlayout.widget.PercentFrameLayout>
+
+</LinearLayout>

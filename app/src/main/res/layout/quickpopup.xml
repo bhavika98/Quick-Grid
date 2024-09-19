@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:background="@color/Popup_Color"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/btnPicChange"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:gravity="center"
+            android:background="@drawable/popup_replace"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <com.app.mylib.util.CustomTextView
+            android:text="Replace"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dip"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/btnEdit"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:gravity="center"
+            android:background="@drawable/popup_edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <com.app.mylib.util.CustomTextView
+            android:layout_marginTop="2dp"
+            android:text="Edit"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dip"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/btnRotate"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:gravity="center"
+            android:background="@drawable/popup_rotate"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <com.app.mylib.util.CustomTextView
+            android:text="Rotate"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="30dip"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/btnClose"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:gravity="center"
+                android:background="@drawable/popup_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <com.app.mylib.util.CustomTextView
+            android:text="Cancel"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

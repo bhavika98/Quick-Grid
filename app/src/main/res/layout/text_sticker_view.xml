@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textFullLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Font_Sticker_Transparent_Stroke"
+    android:clickable="true"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topEditLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomTextLayout">
+
+            <EditText
+                android:id="@+id/addTxtEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:maxLength="30"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="50dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/tabTop"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/Footer_Color">
+
+                <FrameLayout
+                    android:id="@+id/tabTextSticker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/rightIcon" />
+
+                <LinearLayout
+                    android:id="@+id/rightIcon"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:adjustViewBounds="true"
+                        android:onClick="addTextSticker"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/done_btn_selector" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.app.incroyable.quickgrid.util.CustomViewPager
+                android:id="@+id/viewPagerTextSticker"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/tabTop"
+                android:background="@color/BG_Color" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

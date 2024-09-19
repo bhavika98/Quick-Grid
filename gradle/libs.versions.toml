@@ -1,0 +1,47 @@
+[versions]
+agp = "8.3.2"
+androidGpuimage = "v1.4.1"
+androidImageCropper = "2.3.3"
+appcompat = "1.7.0"
+avloadingindicatorview = "2.1.4"
+carbon = "0.11.0"
+collection = "1.4.4"
+compressor = "f2406b90e4"
+core = "1.13.1"
+coreVersion = "3.3.0"
+easydialog = "1.4"
+glide = "4.15.1"
+kotlin = "1.9.10"
+library = "2.0.0"
+material = "1.12.0"
+percentlayout = "1.0.0"
+photoview = "2.0.0"
+rebound = "0.3.8"
+universalImageLoader = "1.9.5"
+dexter = "6.2.3"
+
+[libraries]
+android-gpuimage = { module = "com.github.CyberAgent:android-gpuimage", version.ref = "androidGpuimage" }
+android-image-cropper = { module = "com.github.alirezaafkar:Android-Image-Cropper", version.ref = "androidImageCropper" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-collection = { module = "androidx.collection:collection", version.ref = "collection" }
+androidx-core = { module = "androidx.core:core", version.ref = "core" }
+androidx-percentlayout = { module = "androidx.percentlayout:percentlayout", version.ref = "percentlayout" }
+avloadingindicatorview = { module = "io.github.maitrungduc1410:AVLoadingIndicatorView", version.ref = "avloadingindicatorview" }
+carbon = { module = "com.github.ZieIony:Carbon", version.ref = "carbon" }
+compressor = { module = "com.github.zetbaitsu:Compressor", version.ref = "compressor" }
+core = { module = "com.afollestad.material-dialogs:core", version.ref = "coreVersion" }
+easydialog = { module = "com.github.michaelye.easydialog:easydialog", version.ref = "easydialog" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+library = { module = "com.ogaclejapan.smarttablayout:library", version.ref = "library" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+photoview = { module = "com.github.chrisbanes:PhotoView", version.ref = "photoview" }
+rebound = { module = "com.facebook.rebound:rebound", version.ref = "rebound" }
+universal-image-loader = { module = "com.nostra13.universalimageloader:universal-image-loader", version.ref = "universalImageLoader" }
+utils-v4 = { module = "com.ogaclejapan.smarttablayout:utils-v4", version.ref = "library" }
+dexter = { module = "com.karumi:dexter", version.ref = "dexter" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
